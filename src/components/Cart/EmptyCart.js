@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class EmptyCart extends Component {
     render() {
@@ -9,6 +10,7 @@ class EmptyCart extends Component {
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Cart Is Empty</h1>
+    <Link class="btn btn-primary btn-lg" to="/" role="button">Back to Home</Link>
     
   </div>
 </div>

@@ -19,35 +19,6 @@ class CartColumns extends Component {
 
 
 
-  <div class="card-body">
-
-  <div class="container ">
-  <div class="row ">
-    <div class="col-sm">
-      pic
-    </div>
-    <div class="col-sm">
-      name
-    </div>
-    <div class="col-sm">
-      Price
-    </div>
-
-    <div class="col-sm">
-      
-    </div>
-
-    <div class="col-sm">
-    item total price
-    </div>
-    <div class="col-sm">
-    Remove
-    </div>
-
-  </div>
-</div>
-
-  </div>
 
 </div>
    

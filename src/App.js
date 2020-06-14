@@ -30,7 +30,8 @@ function App() {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a className="navbar-brand" href="/">Online Shop</a>
+    
+      <Link className="navbar-brand" to="/">Mobile Outlet</Link>
       <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
         <li className="nav-item active">
        
@@ -44,7 +45,7 @@ function App() {
 
         </li>
         <li className="nav-item active">
-        <Link className="nav-link" to="/#">Sign In <span className="sr-only">(current)</span></Link>
+        <Link className="nav-link" to="#">Sign In <span className="sr-only">(current)</span></Link>
      
               </li>
 

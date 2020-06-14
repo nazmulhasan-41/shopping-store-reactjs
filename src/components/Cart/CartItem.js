@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faPlus, faMinusSquare, faMinus ,faTrash} from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faMinusSquare, faMinus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -35,50 +35,58 @@ export default function CartItem({ item, value }) {
                             <div class="col-sm">
                                 {title}
                             </div>
-                            
+
 
                             <div class="col-sm">
                                 Price : {price}
                             </div>
 
+
+
+
                             <div class="col-sm">
 
 
 
-                                <div class="btn-toolbar " role="toolbar" aria-label="Toolbar with button groups">
-
-                                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                
+                                    <div class="btn-group " role="group" aria-label="Second group">
                                         <button type="button" class="btn btn-secondary"
                                             onClick={() => {
                                                 increment(id);
                                             }}> <FontAwesomeIcon icon={faPlus} /></button>
 
                                     </div>
-                                    <div class="btn-group mr-2" role="group" aria-label="Third group">
+
+                                    <div class="btn-group " role="group" aria-label="Third group">
                                         <button type="button" class="btn btn-secondary">{count}</button>
                                     </div>
 
-                                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+
+                                    <div class="btn-group" role="group" aria-label="Second group">
                                         <button type="button" class="btn btn-secondary" onClick={() => {
                                             decrement(id);
                                         }}
                                         > <FontAwesomeIcon icon={faMinus} /></button>
 
-                                    </div>
+                                    
+
                                 </div>
 
                             </div>
+                            
+                            <div class="col-sm">
+                                <div class="btn btn-secondary" onClick={() => removeItem(id)}>
+                                    <FontAwesomeIcon icon={faTrash} />
+                                </div>
+                            </div>
+
 
 
                             <div class="col-sm">
-                                 item Total:$ {total}
+                                item Total:$ {total}
                             </div>
 
-                            <div class="col-sm">
-                                 <div class="btn btn-secondary" onClick={()=>removeItem(id)}>
-                                 <FontAwesomeIcon icon={faTrash} />
-                                     </div>
-                            </div>
+                            
 
 
 

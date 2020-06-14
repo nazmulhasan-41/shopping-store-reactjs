@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import PayPalButton from './PayPalButton';
 
-function CartTotal ({value}){
+function CartTotal ({value,history}){
     const {cartTotal,cartSubTotal,cartTax,clearCart}=value;
 
         return (
@@ -30,8 +31,14 @@ function CartTotal ({value}){
         <li class="list-group-item">cartSubTotal : $ {cartSubTotal}</li>
         <li class="list-group-item">Tax :$ {cartTax}</li>
   <li class="list-group-item">CartTotal : $ {cartTotal}</li>
-  <li class="list-group-item"></li>
+  <li class="list-group-item">
+
+    <PayPalButton total={cartTotal} 
+    clearCart={clearCart}
+    history={history}/>
+  </li>
 </ul>
+
 
 
 
