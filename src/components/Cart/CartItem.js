@@ -47,33 +47,36 @@ export default function CartItem({ item, value }) {
                             <div class="col-sm">
 
 
-
-                                
-                                    <div class="btn-group " role="group" aria-label="Second group">
-                                        <button type="button" class="btn btn-secondary"
-                                            onClick={() => {
-                                                increment(id);
-                                            }}> <FontAwesomeIcon icon={faPlus} /></button>
-
-                                    </div>
-
-                                    <div class="btn-group " role="group" aria-label="Third group">
-                                        <button type="button" class="btn btn-secondary">{count}</button>
-                                    </div>
+                                <div class="btn-group" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" onClick={() => {
+                                        decrement(id);
+                                    }}
+                                    > <FontAwesomeIcon icon={faMinus} /></button>
 
 
-                                    <div class="btn-group" role="group" aria-label="Second group">
-                                        <button type="button" class="btn btn-secondary" onClick={() => {
-                                            decrement(id);
-                                        }}
-                                        > <FontAwesomeIcon icon={faMinus} /></button>
-
-                                    
 
                                 </div>
 
+
+
+
+                                <div class="btn-group " role="group" aria-label="Third group">
+                                    <button type="button" class="btn btn-secondary">{count}</button>
+                                </div>
+
+                                <div class="btn-group " role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"
+                                        onClick={() => {
+                                            increment(id);
+                                        }}> <FontAwesomeIcon icon={faPlus} /></button>
+
+                                </div>
+
+
+
+
                             </div>
-                            
+
                             <div class="col-sm">
                                 <div class="btn btn-secondary" onClick={() => removeItem(id)}>
                                     <FontAwesomeIcon icon={faTrash} />
@@ -86,7 +89,7 @@ export default function CartItem({ item, value }) {
                                 item Total:$ {total}
                             </div>
 
-                            
+
 
 
 
