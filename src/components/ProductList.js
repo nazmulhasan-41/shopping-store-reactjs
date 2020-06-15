@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Product from './Product';
 
 import { ProductConsumer } from '../context';
+import RangeSlider from './RangeSlider';
 
 
 class ProductList extends Component {
@@ -21,6 +22,8 @@ class ProductList extends Component {
   </div>
 </div>
 
+
+<RangeSlider/>
 
 
 

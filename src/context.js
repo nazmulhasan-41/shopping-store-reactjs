@@ -33,6 +33,26 @@ class ProductProvider extends Component {
         })
 
     }
+
+
+    filterProducts=(str)=>{
+        let tempProducts=[];
+        
+        let lowerdStr=str.toLowerCase();
+
+        const selectedProduct=storeProducts.filter(item=>item.title.toLowerCase().includes(lowerdStr) || item.company.toLowerCase().includes(lowerdStr) );
+    
+      
+        this.setState(()=>{
+            return {products:selectedProduct}
+        }) 
+
+
+
+    }
+
+
+    
     getItem=id=>{
         const product = this.state.products.find(item=>item.id===id);
         return product;
@@ -40,14 +60,14 @@ class ProductProvider extends Component {
     }
     handleDetail=(id)=>{
         const product=this.getItem(id);
-        console.log(product);
+     
         this.setState(()=>{
             return {detailProduct:product}
         })
         
     };
     addToCart=(id)=>{
-        console.log(`from Add to cart context id id: ${id}`);
+        
         let  tempProducts=[...this.state.products];
         const index=tempProducts.indexOf(this.getItem(id));
         const product=tempProducts[index];
@@ -67,7 +87,6 @@ class ProductProvider extends Component {
 
     openModal=(id)=>{
         const product=this.getItem(id);
-        console.log(product);
 
         this.setState(()=>{
             return {modalProduct:product,modalOpen:true}
@@ -165,7 +184,7 @@ class ProductProvider extends Component {
 
     }
     clearCart=()=>{
-        console.log("clearCart.....");
+        
         this.setState(()=>{
             return {cart:[]}
         },()=>{
@@ -206,6 +225,11 @@ class ProductProvider extends Component {
                 decrement:this.decrement,
                 removeItem:this.removeItem,
                 clearCart:this.clearCart,
+
+
+
+                filterProducts:this.filterProducts,
+                setProducts:this.setProducts,
 
             }} >
 

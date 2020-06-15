@@ -64,30 +64,6 @@ export default class Product extends Component {
 
 
 
-
-
-
-
-                            {/*  {
-                                inCart ? (
-
-                                    <Modal />
-                                )
-                                    : (
-                                        <h4></h4>
-
-
-                                    )
-
-                            } */}
-
-                            {/* <Link to="/Cart" onClick={() => {
-                                value.handleDetail(id);
-                            }} >
-                                Go to cart
-                            </Link> */}
-
-
                         </div>
                     </div>
 

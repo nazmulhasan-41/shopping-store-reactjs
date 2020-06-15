@@ -87,7 +87,7 @@ export const storeProducts = [
   },
   {
     id: 8,
-    title: "Smashed Iphone",
+    title: "Smashed Iphone ",
     img: "img/product-8.png",
     price: 2,
     company: "apple",
