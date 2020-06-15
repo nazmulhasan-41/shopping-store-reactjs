@@ -129,7 +129,7 @@ export default function App() {
                                                     } > Samsung </Link>
 
                                                 <Link className="dropdown-item"
-                                                    to="/#"
+                                                    to="/LandPage"
                                                     onClick={
                                                         () => {
                                                             value.filterProducts("Shawmi");

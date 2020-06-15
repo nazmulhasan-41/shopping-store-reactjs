@@ -38,7 +38,7 @@ class Details extends Component {
 
                                     <h3 class="text-left">Price: ${price}</h3>
                                     <h4 class="text-left">company: {company}</h4>
-                                    <p class="text-left">Details:</p>
+                                    <p class="text-left">Specification :</p>
                                     <p class="text-left">{info}</p>
 
 
@@ -48,10 +48,10 @@ class Details extends Component {
 
 
 
-                                            {inCart ?
+                                            {value.inCart(id) ?
                                                 <Link to="/Cart" class="btn btn-primary stretched-link">
 
-                                                    <FontAwesomeIcon icon={faCartPlus} />
+                                                    Go to<FontAwesomeIcon icon={faCartPlus} />
                                                 </Link>
 
                                                 :

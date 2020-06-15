@@ -57,7 +57,7 @@ class ProductProvider extends Component {
         
 
     
-        const selectedProduct=storeProducts.filter(item=>item.price >= range[0] && item.price <= range[1] );
+        const selectedProduct=storeProducts.filter(item=>item.price/10 >= range[0] && item.price/10 <= range[1] );
        
          this.setState(()=>{
             return {products:selectedProduct}
@@ -69,6 +69,7 @@ class ProductProvider extends Component {
     
     getItem=id=>{
         const product = this.state.products.find(item=>item.id===id);
+       
         return product;
 
     }
@@ -223,6 +224,18 @@ class ProductProvider extends Component {
         })
     }
 
+    inCart=(id)=>{
+
+        const product = this.state.cart.find(item=>item.id===id);
+        
+        if(product){return true;}
+        else{
+            return false;
+        }
+        
+
+    }
+
 
 
     render() {
@@ -245,6 +258,9 @@ class ProductProvider extends Component {
                 filterProducts:this.filterProducts,
                 setProducts:this.setProducts,
                 filterProductsByPrice:this.filterProductsByPrice,
+
+                getItem:this.getItem,
+                inCart:this.inCart,
 
             }} >
 

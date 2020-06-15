@@ -110,7 +110,7 @@ export default function RangeSlider() {
 
 
 
-              <h5>Price Range :  <span class="badge badge-secondary">{x[0]}-{x[1]}</span></h5>
+              <h5>Price Range :  <span class="badge badge-secondary">${x[0]}0-${x[1]}0</span></h5>
         
         
 

@@ -1,59 +1,32 @@
 import React, { Component } from 'react';
 import { ProductConsumer } from '../context';
 import { Link } from 'react-router-dom';
-
-import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faMinusSquare, faMinus, faTrash, faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 class Modal extends Component {
     render() {
+
+        let { id, title, img, price, info, inCart, company } = this.props.p;
+        
+
+       
+
         return (
-            <ProductConsumer>
-                {(value => {
-                    const { modalOpen, closeModal } = value;
-                    const { img, title, price } = value.modalProduct;
+           
 
-                    if (!modalOpen) {
-
-                        return <h1>dsfdsf</h1>;
-                    }
-                    else {
-
-                       
-
-                        return (
+                    
                             <div>
 
-                            
-
-
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                                    Zoom
-                                </button> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                                    Add to <FontAwesomeIcon icon={faCartPlus} />
+                                </button>
 
-                                {/* modal-dialog modal-dialog-centered */}
+                               
                                 <div class="modal fade   " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -69,26 +42,38 @@ class Modal extends Component {
 
                                                 <div class="card text-center">
                                                     <div class="card-header">
-                                                        Featured
+                                                        <strong>{title}</strong>
                                                     </div>
                                                     <div class="card-body">
                                                         <h5 class="card-title">Price: ${price}</h5>
                                                         <img src={img} class="card-img-top" alt="..." />
-                                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
                                                     </div>
                                                     <div class="card-footer text-muted">
-                                                        2 days ago
+
+
+
+                                                        <a href="#" class="btn btn-primary">
+
+                                                            Add to <FontAwesomeIcon icon={faCartPlus} />
+
+                                                        </a>
+
+                                                        <Link to='/'>
+
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                                                onClick={() => {
+
+                                                                }}>Go to <FontAwesomeIcon icon={faCartPlus} />
+                                                            </button>
+
+                                                        </Link>
+
+
+
                                                     </div>
 
-                                                    <Link to='/Cart'>
 
-                                                        <button type="button" class="btn btn-primary" data-dismiss="modal"
-                                                            onClick={() => {
-
-                                                            }}>go to Cart
-                                                    </button>
-
-                                                    </Link>
                                                 </div>
 
 
@@ -107,14 +92,7 @@ class Modal extends Component {
 
                             </div>
 
-                        );
-
-
-                    }
-
-                })}
-
-            </ProductConsumer>
+                                
         );
     }
 }
