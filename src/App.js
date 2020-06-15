@@ -27,6 +27,10 @@ function add(e) {
   
 }
 
+function fnc(){
+  return (<h2>sdfsdfdsf</h2>)
+}
+
 
   return (
 
@@ -115,10 +119,15 @@ function add(e) {
 
                 </ul>
 
+                <Link to="/">
 
-                <form class="form-inline my-2 my-lg-0" onSubmit={(e)=>{
+                
+
+
+                <form class="form-inline my-2 my-lg-0"  onSubmit={(e)=>{
                   e.preventDefault();
                   value.filterProducts(e.target.in.value);
+                  fnc();
                 }} >
                   <input class="form-control mr-sm-2" name="in" type="search"
                    placeholder="Search"  onChange={(e)=>{
@@ -132,6 +141,8 @@ function add(e) {
                     
                   }}>Search</button>
                 </form>
+
+                </Link>
 
 
                 

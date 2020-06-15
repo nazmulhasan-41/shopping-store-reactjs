@@ -36,18 +36,32 @@ class ProductProvider extends Component {
 
 
     filterProducts=(str)=>{
-        let tempProducts=[];
-        
+  
         let lowerdStr=str.toLowerCase();
 
+       // console.log(this.products);
+
         const selectedProduct=storeProducts.filter(item=>item.title.toLowerCase().includes(lowerdStr) || item.company.toLowerCase().includes(lowerdStr) );
-    
       
         this.setState(()=>{
             return {products:selectedProduct}
         }) 
 
 
+
+    }
+
+
+    
+    filterProductsByPrice=(range)=>{
+        
+
+    
+        const selectedProduct=storeProducts.filter(item=>item.price >= range[0] && item.price <= range[1] );
+       
+         this.setState(()=>{
+            return {products:selectedProduct}
+        }) 
 
     }
 
@@ -230,6 +244,7 @@ class ProductProvider extends Component {
 
                 filterProducts:this.filterProducts,
                 setProducts:this.setProducts,
+                filterProductsByPrice:this.filterProductsByPrice,
 
             }} >
 
