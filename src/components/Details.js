@@ -74,7 +74,7 @@ class Details extends Component {
 
                                         <div class="col">
 
-                                            <Link to="/" class="btn btn-primary stretched-link">
+                                            <Link to="/LandPage" class="btn btn-primary stretched-link">
                                                 Back to Products</Link>
 
                                         </div>

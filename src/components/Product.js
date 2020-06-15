@@ -52,6 +52,7 @@ export default class Product extends Component {
 
                                             }}
                                         >
+                                            
                                             Add to <FontAwesomeIcon icon={faCartPlus} />
 
                                         </button>

@@ -28,7 +28,7 @@ function CartTotal ({value,history}){
       </Link>
 
 
-      <Link to="/">
+      <Link to="/LandPage">
       <button type="button" class="btn btn-primary py-1 my-1" >Home</button>
 
       </Link>
