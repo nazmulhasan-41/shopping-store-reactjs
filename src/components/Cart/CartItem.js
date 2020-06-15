@@ -33,7 +33,7 @@ export default function CartItem({ item, value }) {
 
                             </div>
                             <div class="col-sm">
-                                {title}
+                               <strong> {title}</strong>
                             </div>
 
 
@@ -44,10 +44,10 @@ export default function CartItem({ item, value }) {
 
 
 
-                            <div class="col-sm">
+                            <div class="col-sm pb-1">
 
 
-                                <div class="btn-group" role="group" aria-label="Second group">
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
                                     <button type="button" class="btn btn-secondary" onClick={() => {
                                         decrement(id);
                                     }}
@@ -60,7 +60,7 @@ export default function CartItem({ item, value }) {
 
 
 
-                                <div class="btn-group " role="group" aria-label="Third group">
+                                <div class="btn-group mr-2 " role="group" aria-label="Third group">
                                     <button type="button" class="btn btn-secondary">{count}</button>
                                 </div>
 
@@ -86,7 +86,7 @@ export default function CartItem({ item, value }) {
 
 
                             <div class="col-sm">
-                                item Total:$ {total}
+                                Item Total:$ {total}
                             </div>
 
 

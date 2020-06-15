@@ -21,11 +21,19 @@ function CartTotal ({value,history}){
 
 
     <ul class="list-group list-group-flush">
-  <li class="list-group-item">
-      <Link to="/">
-      <button type="button" class="btn btn-danger" onClick={()=>clearCart()}>Clear Cart</button>
+  <li class="list-group-item mr-2 ">
+      <Link to="/" class="mr-2 ">
+      <button type="button" class="btn btn-danger pb-1" onClick={()=>clearCart()}>Clear Cart</button>
 
       </Link>
+
+
+      <Link to="/">
+      <button type="button" class="btn btn-primary py-1 my-1" >Home</button>
+
+      </Link>
+
+
       
       </li>
         <li class="list-group-item">cartSubTotal : $ {cartSubTotal}</li>
