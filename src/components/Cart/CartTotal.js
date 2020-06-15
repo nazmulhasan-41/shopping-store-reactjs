@@ -22,7 +22,7 @@ function CartTotal ({value,history}){
 
     <ul class="list-group list-group-flush">
   <li class="list-group-item mr-2 ">
-      <Link to="/" class="mr-2 ">
+      <Link to="/LandPage" class="mr-2 ">
       <button type="button" class="btn btn-danger pb-1" onClick={()=>clearCart()}>Clear Cart</button>
 
       </Link>
