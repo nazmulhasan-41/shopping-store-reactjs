@@ -15,6 +15,7 @@ import FilterProduct from './components/FilterProduct/FilterProduct';
 import { ProductConsumer } from './context';
 import RangeSlider from './components/RangeSlider';
 import LandPage from './components/Cart/LandingPage/LandPage';
+import Success from './components/Success';
 
 
 
@@ -235,6 +236,11 @@ export default function App() {
                                         /> <Route path="/Range"
                                             component={RangeSlider}
                                         />
+
+                                        <Route path="/Success"
+                                            component={Success}
+                                        />
+
 
                                         <Route component={Default}
                                         />
