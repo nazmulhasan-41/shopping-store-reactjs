@@ -51,7 +51,10 @@ export default class Product extends Component {
 
                                             {value.inCart(id) ?
 
-                                                <Link to="/Cart" class="btn btn-primary stretched-link ">
+                                                <Link to="/Cart" class="btn btn-secondary stretched-link ">
+
+
+
 
                                                     Go to <FontAwesomeIcon icon={faCartPlus} />
                                                 </Link>

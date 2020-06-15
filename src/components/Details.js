@@ -49,14 +49,14 @@ class Details extends Component {
 
 
                                             {value.inCart(id) ?
-                                                <Link to="/Cart" class="btn btn-primary stretched-link">
+                                                <Link to="/Cart" class="btn btn-secondary stretched-link">
 
                                                     Go to<FontAwesomeIcon icon={faCartPlus} />
                                                 </Link>
 
                                                 :
                                                 <button
-                                                    type="button" class="btn btn-secondary"
+                                                    type="button" class="btn btn-primary"
 
                                                     onClick={() => {
                                                         value.addToCart(id);
