@@ -4,7 +4,7 @@ import EmptyCart from './EmptyCart';
 
 import { ProductConsumer } from '../../context';
 import CartList from './CartList';
-import {Link} from 'react-router-dom';
+
 import CartTotal from './CartTotal';
 
 

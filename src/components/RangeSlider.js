@@ -28,18 +28,14 @@ export default function RangeSlider() {
     const [v, setvalue] = React.useState([0, 100]);
     const [x, setvx] = React.useState([0, 100]);
 
-    const [inputValue, setInputvalue] = React.useState([0, 100]);
+    
 
     const handleChange = (event, newvalue) => {
         
-        //setvalue(newvalue);
+       event.preventDefault();
         setvx(newvalue);
-
-
-        
-    }
-
   
+    }
 
 
     return (

@@ -7,8 +7,8 @@ import { faPlus, faMinusSquare, faMinus, faTrash } from '@fortawesome/free-solid
 
 export default function CartItem({ item, value }) {
 
-    const { id, title, img, price, company, info, inCart, count, total } = item;
-    const { increment, decrement, removeItem, clearCart } = value;
+    const { id, title, img, price,  count, total } = item;
+    const { increment, decrement, removeItem } = value;
 
     return (
 

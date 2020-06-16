@@ -3,7 +3,7 @@ import { ProductConsumer } from '../context';
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinusSquare, faMinus, faTrash, faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 class Details extends Component {

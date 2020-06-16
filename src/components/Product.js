@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { ProductConsumer } from '../context';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import Modal from './Modal';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinusSquare, faMinus, faTrash, faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import {  faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import Modal2 from './Cart/Modal2';
 
 
@@ -13,7 +12,7 @@ import Modal2 from './Cart/Modal2';
 export default class Product extends Component {
     render() {
 
-        const { id, title, img, price, info, inCart, company } = this.props.product;
+        const { id, title, img, price,  company } = this.props.product;
 
 
         return (

@@ -7,7 +7,7 @@ import Fade from '@material-ui/core/Fade';
 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinusSquare, faMinus, faTrash, faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import {  faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { ProductConsumer } from '../../context';
 
 const useStyles = makeStyles((theme) => ({
@@ -48,11 +48,6 @@ export default function Modal2(props) {
                 {(value) => (
 
 
-                    //const { modalOpen, closeModal } = value;
-                    //const { img, title, price } = value.modalProduct;
-
-
-
 
         <div>
             <button type="button" class="btn btn-primary" onClick={handleOpen}>
@@ -61,9 +56,6 @@ export default function Modal2(props) {
 
 
 
-            {/*   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                                    Add to <FontAwesomeIcon icon={faCartPlus} />
-                                </button> */}
 
             <Modal
                 aria-labelledby="transition-modal-title"
