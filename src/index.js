@@ -5,6 +5,7 @@ import App from './App';
 
 import {BrowserRouter as Router} from 'react-router-dom';
 
+import {BrowserRouter} from 'react-router-dom';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -13,11 +14,11 @@ import {ProductProvider} from './context';
 
 ReactDOM.render(
   <ProductProvider>
-  <Router>
+  <BrowserRouter>
  
     <App />
   
-  </Router>
+  </BrowserRouter>
  
     </ProductProvider>,
   document.getElementById('root')

@@ -3,21 +3,22 @@ import './App.css';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+
+import LandPage from './components/Cart/LandingPage/LandPage';
+
 import ProductList from './components/ProductList';
 import Product from './components/Product';
 import Details from './components/Details';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default';
-import Modal from './components/Modal';
+
 
 import { Link } from 'react-router-dom';
 import FilterProduct from './components/FilterProduct/FilterProduct';
 import { ProductConsumer } from './context';
 import RangeSlider from './components/RangeSlider';
-import LandPage from './components/Cart/LandingPage/LandPage';
+
 import Success from './components/Success';
-
-
 
 
 
@@ -218,17 +219,23 @@ export default function App() {
                                         <Route path="/"
                                             exact={true}
                                             component={LandPage}
-                                        /> <Route path="/product"
+                                        />
+                                         <Route path="/product"
                                             component={Product}
-                                        /> <Route path="/details"
+                                        />
+                                         <Route path="/details"
                                             component={Details}
-                                        /> <Route path="/cart"
+                                        />
+                                         <Route path="/cart"
                                             component={Cart}
-                                        /> <Route path="/filterproduct"
+                                        />
+                                         <Route path="/filterproduct"
                                             component={FilterProduct}
-                                        /> <Route path="/landpage"
+                                        /> 
+                                        <Route path="/landpage"
                                             component={ProductList}
-                                        /> <Route path="/range"
+                                        />
+                                         <Route path="/range"
                                             component={RangeSlider}
                                         />
 
