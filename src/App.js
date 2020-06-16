@@ -76,7 +76,7 @@ export default function App() {
 
 
                                             < Link className="nav-link"
-                                                to="/LandPage"
+                                                to="/landpage"
                                                 onClick={
                                                     () => {
                                                         value.setProducts();
@@ -85,18 +85,13 @@ export default function App() {
                                                 Home < span className="sr-only" > (current) </span></Link >
                                         </li> <li className="nav-item active" >
                                             <Link className="nav-link"
-                                                to="/Cart" > Cart < span className="sr-only" > (current) </span></Link >
+                                                to="/cart" > Cart < span className="sr-only" > (current) </span></Link >
 
 
                                         </li>
 
 
-                                        {/* <li className="nav-item active" >
-                                            < Link className="nav-link"
-                                                to="/LandPage" > LandPage < span className="sr-only" > (current) </span></Link >
-
-
-                                        </li> */}
+                                        
 
 
 
@@ -110,7 +105,7 @@ export default function App() {
                                                 aria-expanded="false" >
                                                 Brand </Link> <div className="dropdown-menu" >
                                                 < Link className="dropdown-item"
-                                                    to="/LandPage"
+                                                    to="/landpage"
                                                     onClick={
                                                         () => {
                                                             value.filterProducts("HTC");
@@ -122,7 +117,7 @@ export default function App() {
 
 
                                                 <Link className="dropdown-item"
-                                                    to="/LandPage"
+                                                    to="/landpage"
                                                     onClick={
                                                         () => {
                                                             value.filterProducts("Samsung");
@@ -130,7 +125,7 @@ export default function App() {
                                                     } > Samsung </Link>
 
                                                 <Link className="dropdown-item"
-                                                    to="/LandPage"
+                                                    to="/landpage"
                                                     onClick={
                                                         () => {
                                                             value.filterProducts("Shawmi");
@@ -143,7 +138,7 @@ export default function App() {
                                                 <div className="dropdown-divider" > </div>
 
                                                 <Link className="dropdown-item"
-                                                    to="/LandPage"
+                                                    to="/landpage"
                                                     onClick={
                                                         () => {
                                                             value.setProducts();
@@ -166,7 +161,7 @@ export default function App() {
 
                                     </ul>
 
-                                    <Link to="/LandPage" >
+                                    <Link to="/landpage" >
 
 
 
@@ -223,21 +218,21 @@ export default function App() {
                                         <Route path="/"
                                             exact={true}
                                             component={LandPage}
-                                        /> <Route path="/Product"
+                                        /> <Route path="/product"
                                             component={Product}
-                                        /> <Route path="/Details"
+                                        /> <Route path="/details"
                                             component={Details}
-                                        /> <Route path="/Cart"
+                                        /> <Route path="/cart"
                                             component={Cart}
-                                        /> <Route path="/FilterProduct"
+                                        /> <Route path="/filterproduct"
                                             component={FilterProduct}
-                                        /> <Route path="/LandPage"
+                                        /> <Route path="/landpage"
                                             component={ProductList}
-                                        /> <Route path="/Range"
+                                        /> <Route path="/range"
                                             component={RangeSlider}
                                         />
 
-                                        <Route path="/Success"
+                                        <Route path="/success"
                                             component={Success}
                                         />
 

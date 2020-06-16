@@ -49,7 +49,7 @@ class Details extends Component {
 
 
                                             {value.inCart(id) ?
-                                                <Link to="/Cart" class="btn btn-secondary stretched-link">
+                                                <Link to="/cart" class="btn btn-secondary stretched-link">
 
                                                     Go to<FontAwesomeIcon icon={faCartPlus} />
                                                 </Link>
@@ -74,7 +74,7 @@ class Details extends Component {
 
                                         <div class="col">
 
-                                            <Link to="/LandPage" class="btn btn-primary stretched-link">
+                                            <Link to="/landpage" class="btn btn-primary stretched-link">
                                                 Back to Products</Link>
 
                                         </div>

@@ -17,14 +17,11 @@ class Cart extends Component {
             <ProductConsumer>
 
                     {
-
-                        
-                        
+ 
                         value => {
                             const { cart } = value;
 
-                            console.log(cart);
-                            console.log("recieving cart ");
+                            
                              if(cart.length > 0) {
                                 return (
                                     <React.Fragment>

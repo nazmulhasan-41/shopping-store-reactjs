@@ -108,7 +108,7 @@ export default function Modal2(props) {
 
 
                                 {props.p.inCart ?
-                                        <Link to="/Cart" class="btn btn-primary stretched-link mr-2">
+                                        <Link to="/cart" class="btn btn-primary stretched-link mr-2">
 
                                             Go to <FontAwesomeIcon icon={faCartPlus} />
                                         </Link>
@@ -138,7 +138,7 @@ export default function Modal2(props) {
 
 
 
-                                <Link to='/Cart'>
+                                <Link to='/cart'>
 
                                     <button type="button" class="btn btn-primary" data-dismiss="modal"
                                         onClick={() => {

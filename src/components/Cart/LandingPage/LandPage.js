@@ -27,7 +27,7 @@ class LandPage extends Component {
             <em>Myriad products for making your life fashionable
                  </em>
         </h3>
-        <Link class="btn btn-primary btn-xl js-scroll-trigger" to="/LandPage">Products Shop</Link>
+        <Link class="btn btn-primary btn-xl js-scroll-trigger" to="/landpage">Products Shop</Link>
     </div>
     <div class="overlay"></div>
 </header>
@@ -99,7 +99,7 @@ class LandPage extends Component {
     <div class="container text-center">
         <h2 class="mx-auto mb-5">Welcome to
             <em>your</em> next website!</h2>
-        <Link class="btn btn-primary btn-xl" to="/LandPage">Let's Dive</Link>
+        <Link class="btn btn-primary btn-xl" to="/landpage">Let's Dive</Link>
     </div>
 </section>
 

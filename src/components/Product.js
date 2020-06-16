@@ -33,7 +33,7 @@ export default class Product extends Component {
 
                             <div class="card " style={{ width: "18rem" }}>
 
-                                <Link to="/Details" onClick={() => {
+                                <Link to="/details" onClick={() => {
                                     value.handleDetail(id);
                                 }} >
                                     <img src={img} class="card-img-top" alt="..." />
@@ -51,7 +51,7 @@ export default class Product extends Component {
 
                                             {value.inCart(id) ?
 
-                                                <Link to="/Cart" class="btn btn-secondary stretched-link ">
+                                                <Link to="/cart" class="btn btn-secondary stretched-link ">
 
 
 
